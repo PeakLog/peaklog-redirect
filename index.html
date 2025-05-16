@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>PeakLog Weiterleitung</title>
-    <script>
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  <meta charset="UTF-8">
+  <title>PeakLog Weiterleitung</title>
+  <script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-        if (/android/i.test(userAgent)) {
-          window.location.href = "https://play.google.com/store/apps/details?id=DEINE_APP_ID";
-        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          window.location.href = "https://apps.apple.com/us/app/peaklog/id6744808857";
-        } else {
-          window.location.href = "https://peaklog.app";
-        }
-    </script>
+    if (/android/i.test(userAgent)) {
+      // Weiterleitung zur Startseite des Google Play Store
+      window.location.href = "https://play.google.com/store";
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.href = "https://apps.apple.com/us/app/peaklog/id6744808857";
+    } else {
+      window.location.href = "https://peaklog.app"; // Fallback (optional)
+    }
+  </script>
 </head>
 <body>
-<p>Du wirst weitergeleitet…</p>
+  <p>Du wirst weitergeleitet…</p>
 </body>
 </html>
+
