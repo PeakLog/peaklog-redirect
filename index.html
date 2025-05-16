@@ -7,12 +7,11 @@
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
-      // Weiterleitung zur Startseite des Google Play Store
-      window.location.href = "https://play.google.com/store";
+      window.location.replace("https://play.google.com/store");
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.location.href = "https://apps.apple.com/us/app/peaklog/id6744808857";
+      window.location.replace("https://apps.apple.com/us/app/peaklog/id6744808857");
     } else {
-      window.location.href = "https://peaklog.app"; // Fallback (optional)
+      window.location.replace("https://peaklog.app");
     }
   </script>
 </head>
@@ -20,4 +19,3 @@
   <p>Du wirst weitergeleitet…</p>
 </body>
 </html>
-
