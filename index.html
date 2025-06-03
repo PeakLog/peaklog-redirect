@@ -11,20 +11,20 @@
   <meta property="og:image" content="https://peaklog.github.io/logo.png" />
   <meta property="og:url" content="https://peaklog.github.io/" />
   <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <p>Du wirst weitergeleitet…</p>
 
   <script>
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
-      window.location.replace("https://play.google.com/store/apps/details?id=com.trojer.tony.peaklog.v2");
+      window.location.href = "https://play.google.com/store/apps/details?id=com.trojer.tony.peaklog.v2";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.location.replace("https://apps.apple.com/us/app/peaklog/id6744808857");
+      window.location.href = "https://apps.apple.com/us/app/peaklog/id6744808857";
     } else {
-      window.location.replace("https://peaklog.app");
+      window.location.href = "https://peaklog.app";
     }
   </script>
-</head>
-<body>
-  <p>Du wirst weitergeleitet…</p>
 </body>
 </html>
